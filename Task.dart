@@ -2,12 +2,13 @@ class Task{
   String? _title;
   String? _description;
   String? _status;
+  DateTime? _dueDate;
 
     Task(String? title, String? description, String? status, DateTime? dueDate){
     this._title = title;
     this._description = description;
     this._status = status;
-    // this._dueDate = dueDate;
+    this._dueDate = dueDate;
   }
   
   void setTitle(String title) {
@@ -19,7 +20,7 @@ class Task{
   }
 
   void setDate(DateTime dueDate) {
-    // this._dueDate = dueDate;
+    this._dueDate = dueDate;
   }
 
   void setStatus(String? status) {
@@ -35,7 +36,7 @@ class Task{
   }
 
   DateTime? getDate() {
-    // return this._dueDate;
+    return this._dueDate;
   }
 
   String? getStatus() {
