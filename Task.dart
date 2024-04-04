@@ -11,6 +11,5 @@ class Task{
     this._dueDate = dueDate;
   }
 
-  
 
 }
