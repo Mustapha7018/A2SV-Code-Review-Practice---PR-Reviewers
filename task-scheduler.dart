@@ -30,6 +30,10 @@ class TaskScheduler {
 
   // View all pending tasks
   void viewPendingTasks() {
+    for (Task task in taskList){
+      if (task.status == false){
+        print(task.title);
+      }
 
   }
 
