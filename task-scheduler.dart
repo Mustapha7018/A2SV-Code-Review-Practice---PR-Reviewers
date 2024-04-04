@@ -1,53 +1,32 @@
 class Task {
-
   // Properties
- 
 
   // Task constructor
   Task();
-  
 }
 
 class TaskScheduler {
+  List<Task> taskList = [];
 
   // Add task method
-  void addTask() {
-
+  void addTask(Task task) {
+    taskList.add(task);
   }
-
 
   // View all tasks
-  void viewAllTask() {
-
-  }
-
+  void viewAllTask() {}
 
   // View all completed tasks
-  void viewCompletedTasks() {
-
-  }
-
+  void viewCompletedTasks() {}
 
   // View all pending tasks
-  void viewPendingTasks() {
-
-  }
-
+  void viewPendingTasks() {}
 
   // Edit task method
-  void editTask() {
-
-  }
-
+  void editTask() {}
 
   // Delete task
-  void deleteTask() {
-
-  }
-
+  void deleteTask() {}
 }
 
-
-void main() {
-  
-}
+void main() {}
