@@ -17,8 +17,11 @@ class TaskScheduler {
 
 
   // View all tasks
-  void viewAllTask() {
-
+  void viewAll() {
+    for (Task task in taskList) {
+      print(
+          "Title: ${task.title}, Description: ${task.description}, Due Date: ${task.dueDate}, Completed: ${task.status}");
+    }
   }
 
 
