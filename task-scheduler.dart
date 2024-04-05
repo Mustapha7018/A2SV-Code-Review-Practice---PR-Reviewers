@@ -47,45 +47,32 @@ class Task{
 
 
 class TaskScheduler {
+  List<Task> _taskList = [];
+  List<Task> _taskList = [];
 
   // Add task method
-  void addTask() {
-
+  void addTask(Task task) {
+    _taskList.add(task);
+  void addTask(Task task) {
+    _taskList.add(task);
   }
-
 
   // View all tasks
-  void viewAllTask() {
-
-  }
-
+  void viewAllTask() {}
+  void viewAllTask() {}
 
   // View all completed tasks
-  void viewCompletedTasks() {
-
-  }
-
+  void viewCompletedTasks() {}
+  void viewCompletedTasks() {}
 
   // View all pending tasks
-  void viewPendingTasks() {
-
-  }
-
+  void viewPendingTasks() {}
 
   // Edit task method
-  void editTask() {
-
-  }
-
+  void editTask() {}
 
   // Delete task
-  void deleteTask() {
-
-  }
-
+  void deleteTask() {}
 }
 
-
-void main() {
-  
-}
+void main() {}
