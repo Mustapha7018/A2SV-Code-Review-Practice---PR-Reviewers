@@ -6,11 +6,11 @@ class Task {
 }
 
 class TaskScheduler {
-  List<Task> taskList = [];
+  List<Task> _taskList = [];
 
   // Add task method
   void addTask(Task task) {
-    taskList.add(task);
+    _taskList.add(task);
   }
 
   // View all tasks
