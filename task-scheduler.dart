@@ -48,7 +48,6 @@ class Task{
 
 class TaskScheduler {
   List<Task> _taskList = [];
-  List<Task> _taskList = [];
 
   // Add task method
   void addTask(Task task) {
@@ -59,20 +58,38 @@ class TaskScheduler {
 
   // View all tasks
   void viewAllTask() {}
-  void viewAllTask() {}
+
 
   // View all completed tasks
   void viewCompletedTasks() {}
-  void viewCompletedTasks() {}
+
 
   // View all pending tasks
   void viewPendingTasks() {}
 
   // Edit task method
-  void editTask() {}
+  void editTask(int,id,int choice,String? title,String? desc,String? status) {
+    if (choice == 1){
+      if (title != null){
+        _taskList[id].setTitle(title);
+      } 
+    }
+    if (choice == 2){
+      if (desc != null){
+        _taskList[id].setDescription(desc);
+      } 
+    }
+     if (choice == 3){
+      if (status != null){
+        _taskList[id].setDescription(status);
+      } 
+    }
+
+  }
 
   // Delete task
   void deleteTask() {}
 }
 
 void main() {}
+}
