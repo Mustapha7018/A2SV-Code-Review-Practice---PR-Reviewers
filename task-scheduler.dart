@@ -48,7 +48,7 @@ class Task{
 
 class TaskScheduler {
   List<Task> _taskList = [];
-  List<Task> _taskList = [];
+
 
   // Add task method
   void addTask(Task task) {
@@ -59,11 +59,11 @@ class TaskScheduler {
 
   // View all tasks
   void viewAllTask() {}
-  void viewAllTask() {}
+
 
   // View all completed tasks
   void viewCompletedTasks() {}
-  void viewCompletedTasks() {}
+
 
   // View all pending tasks
   void viewPendingTasks() {}
@@ -72,7 +72,10 @@ class TaskScheduler {
   void editTask() {}
 
   // Delete task
-  void deleteTask() {}
+  void deleteTask(int id) {
+    _taskList.removeAt(id);
+  }
 }
 
 void main() {}
+}
